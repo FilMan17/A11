@@ -3,13 +3,67 @@
 	margin: 0;
 	padding: 0;
 }
+
+@media screen and (max-width: 540px) {
+	aside h2 a {
+		font-size: 85%;
+	}
+
+	aside h2 {
+		font-size: 110%;
+	}
+
+	section h1 {
+		font-size: 125%;
+	}
+
+	section h2 {
+		font-size: 110%;
+	}
+}
+
+@media screen and (max-width: 540px) {
+	header {
+		text-align: center;
+	}
+
+	header img {
+		float: none;
+		max-width: 30%;
+	}
+
+	section {
+		float: none;
+		width: 95.84%;
+	}
+
+	aside {
+		float: none;
+		padding-right: 0;
+		width: 97.92%;
+	}
+
+	#nav_menu {
+		display: none;
+	}
+
+	#mobile_menu {
+		display: block;
+	}
+
+	.slicknav_menu {
+		background-color: #800000;
+	}	
+}
+
 html {
 	background-color: white;
 }
 body {
 	font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
-    width: 800px;
+    width: 98%;
+	max-width: 960px;
     margin: 0 auto;
     border: 3px solid #931420;
     background-color: #fffded;
@@ -40,7 +94,7 @@ header h3 {
 }
 header img {
 	float: left;
-	padding: 0 30px;
+	padding: 0% 3.13%;
 }
 .shadow {
 	text-shadow: 2px 2px 2px #800000;
@@ -54,10 +108,10 @@ header img {
 }
 #nav_menu ul li {
 	float: left;
+	width: 16.67%;
 }
 #nav_menu ul li a {
     display: block;
-    width: 160px;
     text-align: center;
     padding: 1em 0;
     text-decoration: none;
@@ -72,6 +126,7 @@ header img {
     display: none;
     position: absolute;
     top: 100%;
+	width: 100%;
 }
 #nav_menu ul ul li {
 	float: none;
@@ -87,9 +142,9 @@ header img {
 
 /* the styles for the section */
 section {
-	width: 525px;
+	width: 54.69%;
 	float: right;
-	padding: 0 20px 20px 20px;
+	padding: 0 2.08% 20px 2.08%;
 }
 section h1 {
 	font-size: 150%;
@@ -133,13 +188,15 @@ article img {
 	float: right;
 	margin: .5em 0 1em 1em;
 	border: 1px solid black;
+	max-width: 40%;
+	min-width: 150px;
 }
 
 /* the styles for the aside */
 aside {
-	width: 215px;
+	width: 22.4%;
 	float: right;
-	padding: 0 0 20px 20px;
+	padding: 0% 0 20px 2.08%;
 }
 aside h2 {
 	color: #800000;
@@ -165,4 +222,8 @@ footer p {
 	text-align: center;
 	color: white;
 	padding: 1em 0;
+}
+
+#mobile_menu {
+	display: none;
 }
